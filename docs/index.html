@@ -3,122 +3,209 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kalaiselvi — Portfolio</title>
+  <title>KALAISELVI D — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- NAVIGATION BAR -->
+  <canvas id="webCanvas"></canvas>
+
+  <!-- Animated Bubbles Background -->
+  <div class="bubbles">
+    <span style="--i:11;"></span><span style="--i:19;"></span><span style="--i:27;"></span>
+    <span style="--i:15;"></span><span style="--i:23;"></span><span style="--i:18;"></span>
+    <span style="--i:24;"></span><span style="--i:20;"></span><span style="--i:12;"></span>
+    <span style="--i:16;"></span><span style="--i:22;"></span><span style="--i:10;"></span>
+    <span style="--i:14;"></span><span style="--i:26;"></span><span style="--i:17;"></span>
+    <span style="--i:21;"></span><span style="--i:28;"></span><span style="--i:13;"></span>
+    <span style="--i:25;"></span><span style="--i:29;"></span>
+    
+  </div>
+
+  <!-- NAVIGATION -->
   <header class="navbar">
     <div class="brand">KALAISELVI D</div>
     <nav class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
+       
       <a href="#education">Education</a>
-       <a href="#experience">Experience</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+       <a href="#contact">Contact</a> 
       <a href="Resume.pdf" class="resume-btn" download>Resume</a>
     </nav>
     <button class="menu-btn" id="menuBtn">☰</button>
   </header>
 
   <main>
-    <!-- HERO SECTION -->
-<section id="home" class="hero">
-  <div class="badge">Web Developer Portfolio</div>
-  <h1>Providing the <span class="accent">Best</span>&nbsp;project experience.</h1>
-  <p class="lead">
-    I'm a Passionate Full Stack Software Engineer skilled in Website, Mobile and Software development. 
-    Check out my projects and skills.
-  </p>
 
-  <a class="cta" href="#about">Explore More</a>
-
-  <h3 class="tech-intro">Making websites and apps with the below moden technologies:</h3><br><br>
-
-  <div class="tech-grid">
-    <div class="tech">HTML</div>
-    <div class="tech">CSS</div>
-    <div class="tech">JavaScript</div>
-    <div class="tech">React</div>
-    <div class="tech">Node.js</div>
-    
-  </div>
-</section>
-
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="badge">MY PORTFOLIO</div>
+      <h1>Providing the <span class="accent">Best</span> project experience.</h1>
+      <p class="lead">
+        I am a passionate Web Developer skilled in creating modern, fast and responsive applications.
+      </p>
+      <a class="cta" href="#about">Explore More</a>
+    </section>
 
     <!-- ABOUT -->
     <section id="about" class="panel about">
       <h2>About Me</h2>
       <div class="about-inner">
-        <div class="avatar-wrap">
-          <div class="avatar"></div>
+        <div class="avatar">
+          <img src="assets/imgs/KALAI_Photo.jpg" alt="My Photo">
         </div>
         <div class="about-text">
           <h3>Hi, I'm KALAISELVI D</h3>
           <p>
-            Skilled in Java , Python , Flask Framework , MySQL Database , HTML , CSS and JavaScript for building scalable web applications.
-            Passionate about problem-solving , exploring new technologies,  optimizing performance, and delivering innovative solutions.
-            Experienced in both front-end and back-end development through my academic and personal projects.
+            A CSE student passionate about web development and modern digital technologies. I specialize in python , java , flask framework, My SQL, HTML, CSS, and JavaScript, and I enjoy building responsive, user-friendly websites. I am continuously learning and improving to strengthen my full-stack development skills.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="panel education">
-      <h2>Education</h2>
-      <div class="card">
-        <h3>B.E. in Computer Science and Engineering</h3>
-        <p><strong>Sri Ramanujar Engineering College</strong></p>
-        <p>2022 - 2026 </p>
-        <p> CGPA: 9.02</p>
-      </div>
-    </section>
+   <!-- CONTACT SECTION (Simple Text Format) -->
+<section id="contact" class="panel contact-simple">
+  <h2>Contact</h2>
 
-    <!-- EXPERIENCE -->
-<section id="experience" class="panel experience">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="bullet"></div>
-      <div class="content">
-        <h3>Intern — SRF Foundations</h3>
-        <p><strong>July 20 – August 16, 2025</strong></p>
-        <p>
-          Gained hands-on experience in <strong>Embedded IoT (EIoT)</strong> technologies including Arduino, sensors, motors, and hardware integration. 
-          Worked on building and testing circuits, and learned to operate <strong>3D printers</strong> and <strong>engraving machines</strong> for design and fabrication.
-        </p>
-        <p>
-          Explored various software and hardware tools for embedded projects and automation tasks.
-        </p>
-        <p><strong>Technologies Explored:</strong> Arduino IDE, CirKit, TinkerCad, Laser GRB, 3D Printing Tools</p>
-      </div>
-    </div>
+  <div class="contact-list">
+
+    <p><strong>Email:</strong> kalaiselviraj994@gmail.com</p>
+    
+    <p><strong>GitHub:</strong> 
+      <a href="https://github.com/au412322104024" target="_blank">
+        github.com/au412322104024
+      </a>
+    </p>
+
+    <p><strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/kalaiselvi-d-1b1402324/" target="_blank">
+        linkedin.com/in/kalaiselvi-d-1b1402324
+      </a>
+    </p>
+
   </div>
 </section>
 
 
-    <!-- PROJECTS -->
-    <section id="projects" class="panel projects">
-      <h2>Projects</h2>
-      <div class="cards">
-        <div class="project-card">
-          <h4>Smart Traffic Signal (Arduino)&nbsp;-&nbsp;Mini Project</h4>
-          <p>Arduino Uno + IR sensor + RFID Tag system for emergency vehicles at  signal priority.</p>
-        </div>
-        <div class="project-card">
-          <h4>Hostel Attendance System &nbsp;-&nbsp;Major Project</h4>
-          <p>Biometric attendance with SMS alert and MySQL backend.</p>
-        </div>
+
+
+  
+
+
+    <!-- EDUCATION -->
+    <section id="education" class="panel education">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>B.E. Computer Science and Engineering</h3>
+        <p><strong>Sri Ramanujar Engineering College</strong></p>
+        <p>2022–2026 </p><p> CGPA: 9.02</p>
       </div>
     </section>
 
-    
+    <!-- EXPERIENCE -->
+    <section id="experience" class="panel experience">
+      <h2>Experience</h2>
 
-    <!-- FOOTER -->
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="bullet"></div>
+          <div class="content">
+            <h3>Intern — SRF Foundations</h3>
+            <p><strong>July 20 – August 16, 2025</strong></p>
+            <p>
+              Gained hands-on experience in Embedded system and IoT (EIoT): Arduino, sensors, motors, debugging circuits,
+              3D printing and engraving machines.  
+            </p>
+            <p><strong>Technologies Used:</strong> Arduino IDE, CirKit, TinkerCad, 3D Printing Tools</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel skills">
+      <h2>My Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill"><img src="assets/imgs/python.jpg"><p>Python</p></div>
+        <div class="skill"><img src="assets/imgs/java.jpg"><p>Java</p></div>
+        <div class="skill"><img src="assets/imgs/html.jpg"><p>HTML</p></div>
+        <div class="skill"><img src="assets/imgs/css.jpg"><p>CSS</p></div>
+        <div class="skill"><img src="assets/imgs/js.jpg"><p>JavaScript</p></div>
+        <div class="skill"><img src="assets/imgs/powerbi.jpg"><p>Power BI</p></div>
+        <div class="skill"><img src="assets/imgs/github.jpg"><p>GitHub</p></div>
+        <div class="skill"><img src="assets/imgs/msoffice.jpg"><p>MS Office</p></div>
+        <div class="skill"><img src="assets/imgs/mysql.jpg"><p>MySQL</p></div>
+    <div class="skill"><img src="assets/imgs/flask.jpg"><p>Flask</p></div>
+    <div class="skill"><img src="assets/imgs/react.jpg"><p>React</p></div>
+      </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="panel projects">
+      <h2>Projects</h2>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+          <img src="assets/imgs/project1.jpg">
+          <h3>AI Language Translation Tool</h3>
+          <p>Python-based real-time translator using Google Translate API with GUI support</p>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/imgs/project2.jpg">
+          <h3>Hostel Attendance System</h3>
+          <p>Biometric attendance system with SMS alerts + MySQL backend.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/imgs/project3.jpg">
+          <h3>AI FAQ Chatbot</h3>
+          <p>ML-powered chatbot using NLP to match user questions to the best FAQ answers</p>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/imgs/project4.jpg">
+          <h3>Smart Traffic Signal</h3>
+          <p>Arduino + IR sensor + RFID system for emergency vehicle priority.</p>
+        </div>
+
+         <div class="project-card">
+          <img src="assets/imgs/project5.jpg">
+          <h3>3D Printed Product Design</h3>
+          <p>Designed a custom 3D model using <strong>TinkerCAD</strong> and printed it using FDM 3D printing techniques.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/imgs/project6.jpg">
+          <h3>Laser Engraved Wood Design</h3>
+          
+          <p>Created custom designs on wood using GRBL Laser Software and an engraver machine.</p>
+        </div>
+
+
+
+
+      </div>
+    </section>
+
     <footer class="footer">
-      <p>Made with ❤ by Kalaiselvi · <a href="Resume.pdf" download>Download Resume</a></p>
-    </footer>
+  <p style="text-align: center;">
+    Made with <span style="color:#ff3b3b;">❤</span> by Kalaiselvi · 
+    <a href="Resume.pdf" download>Download Resume</a>
+  </p>
+</footer>
+
+
   </main>
 
   <script src="script.js"></script>
